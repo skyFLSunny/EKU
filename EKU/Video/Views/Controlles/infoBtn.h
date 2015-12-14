@@ -1,5 +1,5 @@
 //
-//  VideoViewController.h
+//  infoBtn.h
 //  EKU
 //
 //  Created by 李瑶 on 15/12/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VideoViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface infoBtn : UIButton
 
 @end

@@ -18,16 +18,33 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
 blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
-
-
+//科目颜色
+#define SUBJECTCOLOR   @[UIColorFromRGB(0xe88785),UIColorFromRGB(0x65abcf),UIColorFromRGB(0xf6e17c),UIColorFromRGB(0x97dad5),UIColorFromRGB(0xa571f9),UIColorFromRGB(0xcfe15b),UIColorFromRGB(0xf57d37),UIColorFromRGB(0x99c2ff),UIColorFromRGB(0xe35b99)]
+// 顶部文字颜色
 #define DAYTOPTEXTCOLOR ([UIColor whiteColor])
-#define DAYTOPBACKCOLOR UIColorFromRGB(0X59aafd)
-#define DAYFOOTBACKCLOR UIColorFromRGB(0Xf2f2f2)
-#define DAYCOLLECTIONLABELCOLOR [UIColor blackColor]
-#define DAYCOLLECTIONBACKCOLOR  UIColorFromRGB(0Xf6f6f6)
-#define SCREENWIDTH  ([UIScreen mainScreen].bounds.size.width)
-#define SCREENHEIGHT  ([UIScreen mainScreen].bounds.size.height)
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
+// 导航栏背景颜色
+#define DAYTOPBACKCOLOR UIColorFromRGB(0X59aafd)
+
+// tabbar背景颜色
+#define DAYFOOTBACKCLOR UIColorFromRGB(0Xf2f2f2)
+
+// 普通文字颜色
+#define DAYTEXTCOLOR [UIColor blackColor]
+
+// 底部灰色
+#define DAYBACKCOLOR   UIColorFromRGB(0Xd2d2d2)
+
+// 控件背景颜色
+#define DAYBOTTOMColor ([UIColor whiteColor])
+
+// 屏幕宽度
+#define SCREENWIDTH  ([UIScreen mainScreen].bounds.size.width)
+
+// 屏幕高度
+#define SCREENHEIGHT  ([UIScreen mainScreen].bounds.size.height)
+
+#define TOPHEIGHT    ([[UIApplication sharedApplication] statusBarFrame].size.height+ self.navigationController.navigationBar.frame.size.height)
+#define FOOTHIGHT     (self.tabBarController.tabBar.frame.size.height)
+#define NORMOLEFONT    [UIFont systemFontOfSize:15]
 #endif /* PrefixHeader_pch */
