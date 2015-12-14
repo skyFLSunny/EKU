@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  subjectSortView.h
 //  EKU
 //
-//  Created by apple on 15/12/7.
+//  Created by 李瑶 on 15/12/14.
 //  Copyright © 2015年 apple. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface subjectSortView : UIView
 
 @end
-

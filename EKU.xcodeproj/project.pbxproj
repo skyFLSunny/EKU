@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		188801771C154972001588C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 188801761C154972001588C3 /* main.m */; };
 		1888017A1C154972001588C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 188801791C154972001588C3 /* AppDelegate.m */; };
-		1888017D1C154972001588C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1888017C1C154972001588C3 /* ViewController.m */; };
 		188801801C154972001588C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1888017E1C154972001588C3 /* Main.storyboard */; };
 		188801821C154972001588C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188801811C154972001588C3 /* Assets.xcassets */; };
 		188801851C154972001588C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188801831C154972001588C3 /* LaunchScreen.storyboard */; };
 		188801901C154972001588C3 /* EKUTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1888018F1C154972001588C3 /* EKUTests.m */; };
 		1888019B1C154972001588C3 /* EKUUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1888019A1C154972001588C3 /* EKUUITests.m */; };
+		8A9164A41C1E52FC009F8E43 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9164A31C1E52FC009F8E43 /* MainViewController.m */; };
+		8A9164A91C1E53AE009F8E43 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9164A81C1E53AE009F8E43 /* TestViewController.m */; };
+		8A9164AC1C1E53C1009F8E43 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9164AB1C1E53C1009F8E43 /* VideoViewController.m */; };
+		8A9164B01C1E53F3009F8E43 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9164AF1C1E53F3009F8E43 /* PersonalViewController.m */; };
+		8A9164B61C1E64C5009F8E43 /* subjectSortView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9164B51C1E64C5009F8E43 /* subjectSortView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +43,6 @@
 		188801761C154972001588C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		188801781C154972001588C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		188801791C154972001588C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1888017B1C154972001588C3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1888017C1C154972001588C3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1888017F1C154972001588C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		188801811C154972001588C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		188801841C154972001588C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +53,17 @@
 		188801961C154972001588C3 /* EKUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EKUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1888019A1C154972001588C3 /* EKUUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EKUUITests.m; sourceTree = "<group>"; };
 		1888019C1C154972001588C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A9164A21C1E52FC009F8E43 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		8A9164A31C1E52FC009F8E43 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		8A9164A71C1E53AE009F8E43 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		8A9164A81C1E53AE009F8E43 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		8A9164AA1C1E53C1009F8E43 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		8A9164AB1C1E53C1009F8E43 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		8A9164AE1C1E53F3009F8E43 /* PersonalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalViewController.h; sourceTree = "<group>"; };
+		8A9164AF1C1E53F3009F8E43 /* PersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
+		8A9164B11C1E5442009F8E43 /* EKU.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EKU.pch; sourceTree = "<group>"; };
+		8A9164B41C1E64C5009F8E43 /* subjectSortView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = subjectSortView.h; sourceTree = "<group>"; };
+		8A9164B51C1E64C5009F8E43 /* subjectSortView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = subjectSortView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +114,12 @@
 		188801741C154972001588C3 /* EKU */ = {
 			isa = PBXGroup;
 			children = (
+				8A91649D1C1E5146009F8E43 /* Personal */,
+				8A91649C1C1E513E009F8E43 /* Test */,
+				8A91649B1C1E50ED009F8E43 /* Video */,
+				8A91649A1C1E50BF009F8E43 /* Main */,
 				188801781C154972001588C3 /* AppDelegate.h */,
 				188801791C154972001588C3 /* AppDelegate.m */,
-				1888017B1C154972001588C3 /* ViewController.h */,
-				1888017C1C154972001588C3 /* ViewController.m */,
 				1888017E1C154972001588C3 /* Main.storyboard */,
 				188801811C154972001588C3 /* Assets.xcassets */,
 				188801831C154972001588C3 /* LaunchScreen.storyboard */,
@@ -118,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				188801761C154972001588C3 /* main.m */,
+				8A9164B11C1E5442009F8E43 /* EKU.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +154,92 @@
 				1888019C1C154972001588C3 /* Info.plist */,
 			);
 			path = EKUUITests;
+			sourceTree = "<group>";
+		};
+		8A91649A1C1E50BF009F8E43 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8A9164A11C1E52C1009F8E43 /* Controllers */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8A91649B1C1E50ED009F8E43 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				8A9164B31C1E6483009F8E43 /* Models */,
+				8A9164B21C1E646C009F8E43 /* Views */,
+				8A9164A51C1E530B009F8E43 /* Controllers */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		8A91649C1C1E513E009F8E43 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				8A9164A61C1E5349009F8E43 /* Controllers */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		8A91649D1C1E5146009F8E43 /* Personal */ = {
+			isa = PBXGroup;
+			children = (
+				8A9164AD1C1E53C7009F8E43 /* Controllers */,
+			);
+			path = Personal;
+			sourceTree = "<group>";
+		};
+		8A9164A11C1E52C1009F8E43 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8A9164A21C1E52FC009F8E43 /* MainViewController.h */,
+				8A9164A31C1E52FC009F8E43 /* MainViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8A9164A51C1E530B009F8E43 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8A9164AA1C1E53C1009F8E43 /* VideoViewController.h */,
+				8A9164AB1C1E53C1009F8E43 /* VideoViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8A9164A61C1E5349009F8E43 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8A9164A71C1E53AE009F8E43 /* TestViewController.h */,
+				8A9164A81C1E53AE009F8E43 /* TestViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8A9164AD1C1E53C7009F8E43 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8A9164AE1C1E53F3009F8E43 /* PersonalViewController.h */,
+				8A9164AF1C1E53F3009F8E43 /* PersonalViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8A9164B21C1E646C009F8E43 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A9164B41C1E64C5009F8E43 /* subjectSortView.h */,
+				8A9164B51C1E64C5009F8E43 /* subjectSortView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A9164B31C1E6483009F8E43 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +372,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1888017D1C154972001588C3 /* ViewController.m in Sources */,
+				8A9164B01C1E53F3009F8E43 /* PersonalViewController.m in Sources */,
 				1888017A1C154972001588C3 /* AppDelegate.m in Sources */,
+				8A9164B61C1E64C5009F8E43 /* subjectSortView.m in Sources */,
+				8A9164AC1C1E53C1009F8E43 /* VideoViewController.m in Sources */,
 				188801771C154972001588C3 /* main.m in Sources */,
+				8A9164A41C1E52FC009F8E43 /* MainViewController.m in Sources */,
+				8A9164A91C1E53AE009F8E43 /* TestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +519,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = EKU/EKU.pch;
 				INFOPLIST_FILE = EKU/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XL.EKU;
@@ -424,6 +531,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = EKU/EKU.pch;
 				INFOPLIST_FILE = EKU/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XL.EKU;
@@ -498,6 +606,7 @@
 				188801A11C154972001588C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		188801A21C154972001588C3 /* Build configuration list for PBXNativeTarget "EKUTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +615,7 @@
 				188801A41C154972001588C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		188801A51C154972001588C3 /* Build configuration list for PBXNativeTarget "EKUUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +624,7 @@
 				188801A71C154972001588C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
