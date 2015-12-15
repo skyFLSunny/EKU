@@ -1,0 +1,8 @@
+platform :ios,'6.0'
+pod 'AFNetworking'
+pod 'FMDB'
+pod 'ZipArchive'
+pod 'AFSoundManager'
+pod 'MJExtension'
+pod 'MJRefresh'
+source 'https://github.com/CocoaPods/Specs.git'

@@ -133,4 +133,8 @@
   
     sortView.backgroundColor = DAYBOTTOMColor;
 }
+-(void)dealloc
+{
+    NSLog(@"shifangle ");
+}
 @end

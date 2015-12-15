@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "InfoDelegate.h"
 @interface infoBtn : UIButton
-
+@property (nonatomic, assign)id<InfoDelegate> delegate;
 @end

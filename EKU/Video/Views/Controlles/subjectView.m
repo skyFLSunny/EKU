@@ -32,5 +32,8 @@
     return self;
 }
 
-
+- (void)dealloc
+{
+    NSLog(@"shifangle ");
+}
 @end

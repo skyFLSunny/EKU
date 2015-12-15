@@ -130,7 +130,7 @@
 {
     if (!_selectedImageArray)
     {
-        _selectedImageArray = @[@"首页.png",@"视频.png",@"试题.png",@"我的.png"];
+        _selectedImageArray = @[@"首页2.png",@"视频2.png",@"练习2.png",@"我的2.png"];
     }
     
     return _selectedImageArray;
