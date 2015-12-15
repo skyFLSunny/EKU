@@ -39,6 +39,7 @@
 		8A21E6301C1FBD1300F14F97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A21E62F1C1FBD1300F14F97 /* Foundation.framework */; };
 		8A70743A1C1FE1980052ACA1 /* FunctionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7074391C1FE1980052ACA1 /* FunctionView.m */; };
 		8A70743D1C1FE5A60052ACA1 /* LeftBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A70743C1C1FE5A60052ACA1 /* LeftBtn.m */; };
+		8A7074401C1FF3720052ACA1 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A70743F1C1FF3720052ACA1 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		8A9164A41C1E52FC009F8E43 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9164A31C1E52FC009F8E43 /* MainViewController.m */; };
 		8A9164A91C1E53AE009F8E43 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9164A81C1E53AE009F8E43 /* TestViewController.m */; };
 		8A9164AC1C1E53C1009F8E43 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9164AB1C1E53C1009F8E43 /* VideoViewController.m */; };
@@ -164,6 +165,8 @@
 		8A7074391C1FE1980052ACA1 /* FunctionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionView.m; sourceTree = "<group>"; };
 		8A70743B1C1FE5A60052ACA1 /* LeftBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftBtn.h; sourceTree = "<group>"; };
 		8A70743C1C1FE5A60052ACA1 /* LeftBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftBtn.m; sourceTree = "<group>"; };
+		8A70743E1C1FF3710052ACA1 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+FDFullscreenPopGesture.h"; path = "../MyHelp/UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		8A70743F1C1FF3720052ACA1 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+FDFullscreenPopGesture.m"; path = "../MyHelp/UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		8A9164A21C1E52FC009F8E43 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		8A9164A31C1E52FC009F8E43 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		8A9164A71C1E53AE009F8E43 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
@@ -697,6 +700,8 @@
 		8ABB72AD1C1FB41A00EB43FC /* Categary */ = {
 			isa = PBXGroup;
 			children = (
+				8A70743E1C1FF3710052ACA1 /* UINavigationController+FDFullscreenPopGesture.h */,
+				8A70743F1C1FF3720052ACA1 /* UINavigationController+FDFullscreenPopGesture.m */,
 				8A21E6251C1FB93300F14F97 /* UIImage+LY.h */,
 				8A21E6261C1FB93300F14F97 /* UIImage+LY.m */,
 				8A21E5AB1C1FB7AB00F14F97 /* NSString+lyMD5.h */,
@@ -918,6 +923,7 @@
 				8A21E59F1C1FB76400F14F97 /* DownLoadManger.m in Sources */,
 				8AAC467E1C1EC8C800086D8C /* SubjectButton.m in Sources */,
 				8A21E5D41C1FB85300F14F97 /* Helper.m in Sources */,
+				8A7074401C1FF3720052ACA1 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				8ABB729B1C1FB11500EB43FC /* GSImageModel.m in Sources */,
 				8A70743A1C1FE1980052ACA1 /* FunctionView.m in Sources */,
 				8ABB72921C1FB11500EB43FC /* TYAttributedLabel.m in Sources */,

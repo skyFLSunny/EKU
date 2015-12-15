@@ -107,7 +107,9 @@
 
 - (void)pressTest:(id)sender
 {
-    
+    UIButton* btn = (UIButton*)sender;
+    int tag = (int)btn.tag-1000;
+    NSLog(@"%d",tag);
 }
 - (void)dealloc
 {

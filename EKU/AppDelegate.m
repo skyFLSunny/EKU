@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "UINavigationController+FDFullscreenPopGesture.h"
 @interface AppDelegate ()
 
 @end
