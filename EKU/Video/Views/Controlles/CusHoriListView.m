@@ -44,6 +44,7 @@
     layout.minimumInteritemSpacing = 0;
     
     _listView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 30, self.frame.size.width, self.frame.size.height - 30) collectionViewLayout:layout];
+    _listView.showsHorizontalScrollIndicator = NO;
     _listView.delegate = self;
     _listView.dataSource = self;
     [_listView registerClass:[HoriListViewCell class] forCellWithReuseIdentifier:@"item"];

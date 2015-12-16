@@ -157,13 +157,13 @@
     self.contentLabel.text = _model.model.Content;
     self.pllabel.text = [NSString stringWithFormat:@"评论于:%@",_model.model.PubTime];
     self.pllabel.textColor = DAYBACKCOLOR;
-    self.pllabel.font=[UIFont systemFontOfSize:10];
-    self.contentLabel.font=[UIFont systemFontOfSize:12];
-    self.flowerContLable.font=[UIFont systemFontOfSize:10];
+    self.pllabel.font=[UIFont systemFontOfSize:12];
+    self.contentLabel.font=[UIFont systemFontOfSize:14];
+    self.flowerContLable.font=[UIFont systemFontOfSize:12];
 
     self.userLabel.text =[NSString stringWithFormat:@"%@",_model.model.petName] ;
     self.userLabel.textColor=DAYTOPBACKCOLOR;
-     self.userLabel.font=[UIFont systemFontOfSize:10];
+     self.userLabel.font=[UIFont systemFontOfSize:12];
     self.backgroundColor = DAYBOTTOMColor;
     self.tximage.backgroundColor=[UIColor clearColor];
     
@@ -302,13 +302,7 @@
     
 }
 
-- (void)deleteLiuYan
-{
-    
-    UIAlertView *myaler = [[UIAlertView alloc]initWithTitle:@"警告" message:@"您确定要删除评论信息吗？" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定",nil];
-    [myaler show];
-    
-   }
+
 
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
 {
