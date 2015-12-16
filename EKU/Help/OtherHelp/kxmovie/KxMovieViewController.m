@@ -271,6 +271,7 @@ _messageLabel.hidden = NO;
     _doneButton.backgroundColor = [UIColor clearColor];
 
     [_doneButton setImage:[UIImage imageNamed:@"返回.png"] forState:UIControlStateNormal];
+    [_doneButton setImageEdgeInsets:UIEdgeInsetsMake(15, 20, 15, 20)];
   
     _doneButton.showsTouchWhenHighlighted = YES;
     [_doneButton addTarget:self action:@selector(doneDidTouch:)
@@ -668,6 +669,10 @@ _messageLabel.hidden = NO;
             _progressSlider.hidden  = NO;
             _leftLabel.hidden       = NO;
             _infoButton.hidden      = NO;
+            if (self.playing==NO) {
+                 [self play];
+            }
+           
             
             if (_activityIndicatorView.isAnimating) {
                 

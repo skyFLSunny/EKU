@@ -24,6 +24,7 @@ NSMutableArray* dataArray;
     [self initArrays];
     [self initTableView];
      self.title = _toptitle;
+    self.view.backgroundColor = DAYBACKCOLOR;
     // Do any additional setup after loading the view.
 }
 - (void)viewWillAppear:(BOOL)animated

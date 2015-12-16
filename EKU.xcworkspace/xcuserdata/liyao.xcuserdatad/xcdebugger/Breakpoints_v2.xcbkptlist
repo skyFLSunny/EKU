@@ -276,11 +276,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EKU/Help/OtherHelp/kxmovie/KxMovieViewController.m"
-            timestampString = "471945544.084087"
+            timestampString = "471947913.156832"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "575"
-            endingLineNumber = "575"
+            startingLineNumber = "576"
+            endingLineNumber = "576"
             landmarkName = "-doneDidTouch:"
             landmarkType = "5">
          </BreakpointContent>
