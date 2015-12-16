@@ -9,6 +9,7 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 #import "lyDownLoad.h"
+#import "masonry.h"
 #define  ContentFilePath  @"SubJectDownload.plist"
 #define CLIPSCANSHU [UIScreen mainScreen].scale
 #define UIColorFromRGB(rgbValue) [UIColor \
@@ -20,6 +21,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
 blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
+#define WEAKSELF typeof(self) __weak weakSelf = self;
 //科目颜色
 #define SUBJECTCOLOR   @[UIColorFromRGB(0xe88785),UIColorFromRGB(0x65abcf),UIColorFromRGB(0xf6e17c),UIColorFromRGB(0x97dad5),UIColorFromRGB(0xa571f9),UIColorFromRGB(0xcfe15b),UIColorFromRGB(0xf57d37),UIColorFromRGB(0x99c2ff),UIColorFromRGB(0xe35b99)]
 // 顶部文字颜色
@@ -35,7 +37,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
 #define DAYTEXTCOLOR [UIColor blackColor]
 
 // 底部灰色
-#define DAYBACKCOLOR   UIColorFromRGB(0Xd2d2d2)
+#define DAYBACKCOLOR   UIColorFromRGB(0Xe4e9ea)
 
 // 控件背景颜色
 #define DAYBOTTOMColor ([UIColor whiteColor])
@@ -48,7 +50,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
 
 #define TOPHEIGHT    ([[UIApplication sharedApplication] statusBarFrame].size.height+ self.navigationController.navigationBar.frame.size.height)
 #define FOOTHIGHT     (self.tabBarController.tabBar.frame.size.height)
-#define NORMOLEFONT    [UIFont systemFontOfSize:15]
+#define NORMOLEFONT    [UIFont systemFontOfSize:16]
 
 #define SMALLFONT    [UIFont systemFontOfSize:13]
 #define BIGFONT    [UIFont systemFontOfSize:17]

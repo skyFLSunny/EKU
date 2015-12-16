@@ -28,7 +28,7 @@
         [self addSubview:_btn];
         [self addSubview:_textLabel];
     }
-    
+    NSLog(@"ds");
     return self;
 }
 

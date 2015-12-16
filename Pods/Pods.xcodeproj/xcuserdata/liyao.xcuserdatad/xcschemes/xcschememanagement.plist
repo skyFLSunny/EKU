@@ -29,6 +29,11 @@
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
+		<key>Masonry.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -53,6 +58,16 @@
 			<true/>
 		</dict>
 		<key>378CE985196E32C5E039AFBC38AAD50C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>53480ED0BE09FF49E34B1702D485CAAB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6F32DEB7669CF876B5FC6AFE2CE3D8DB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -83,6 +98,11 @@
 			<true/>
 		</dict>
 		<key>B23B3D15FFC0FC9893968F478086D58D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F74743F6B7506077B8731324FE7C4E8B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

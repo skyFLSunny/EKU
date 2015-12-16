@@ -30,7 +30,7 @@
     
     titileLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, SCREENWIDTH-100, 45)];
     titileLabel.text = aStr;
-    titileLabel.textColor = DAYBACKCOLOR;
+    titileLabel.textColor = DAYTEXTCOLOR;
     titileLabel.backgroundColor = [UIColor clearColor];
     
     sepView = [[UIView alloc] initWithFrame:CGRectMake(0, 44.5, SCREENWIDTH, 0.5)];

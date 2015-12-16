@@ -39,7 +39,7 @@
         [_titleBtn setImage:[UIImage imageNamed:titleSeImg] forState:UIControlStateHighlighted];
         [_titleBtn addTarget:self action:@selector(funcBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         [_titleBtn setTitleColor:DAYTEXTCOLOR forState:UIControlStateNormal];
-        _titleBtn.titleLabel.font = NORMOLEFONT;
+        _titleBtn.titleLabel.font = SMALLFONT;
         
         [self addSubview:_titleBtn];
         
