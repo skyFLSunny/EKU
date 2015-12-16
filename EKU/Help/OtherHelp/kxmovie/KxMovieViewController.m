@@ -35,8 +35,8 @@ static NSString * formatTimeInterval(CGFloat seconds, BOOL isLeft)
     m = m % 60;
 
     NSMutableString *format = [(isLeft && seconds >= 0.5 ? @"-" : @"") mutableCopy];
-    if (h != 0) [format appendFormat:@"%d:%0.2d", h, m];
-    else        [format appendFormat:@"%d", m];
+    if (h != 0) [format appendFormat:@"%d:%0.2ld", h, (long)m];
+    else        [format appendFormat:@"%ld", (long)m];
     [format appendFormat:@":%0.2d", s];
 
     return format;
@@ -271,7 +271,7 @@ _messageLabel.hidden = NO;
     _doneButton.backgroundColor = [UIColor clearColor];
 
     [_doneButton setImage:[UIImage imageNamed:@"返回.png"] forState:UIControlStateNormal];
-    [_doneButton setImageEdgeInsets:UIEdgeInsetsMake(15, 20, 15, 20)];
+    [_doneButton setImageEdgeInsets:UIEdgeInsetsMake(17, 17, 17, 17)];
   
     _doneButton.showsTouchWhenHighlighted = YES;
     [_doneButton addTarget:self action:@selector(doneDidTouch:)
