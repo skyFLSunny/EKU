@@ -14,7 +14,7 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (nonatomic, assign) NSUInteger isShowError;
 @property (strong, nonatomic) NSArray*normalImageArray;
 @property (strong, nonatomic) NSArray*selectedImageArray;
 @end

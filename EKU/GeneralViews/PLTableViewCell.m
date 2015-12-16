@@ -182,7 +182,7 @@
 
 - (IBAction)presspl:(UIButton*)sender {
     if ([lyDownLoad networkingCanAceess]==0) {
-//         [showErrorView shareWithTtile:@"主人网络断了，赞不了啦！" withFangXiang:1 ];
+         [showErrorView shareWithTtile:@"主人网络断了，赞不了啦！" withFangXiang:1 ];
        
         
         
@@ -191,7 +191,7 @@
     {
    
         if (isZ) {
-//             [showErrorView shareWithTtile:@"您已经赞过了哦！" withFangXiang:1 ];
+             [showErrorView shareWithTtile:@"您已经赞过了哦！" withFangXiang:1 ];
             
         }
         else{
@@ -281,13 +281,13 @@
                 
                 [_delegate cellDeleteBtnClick:self.model];
             }
-//               [showErrorView shareWithTtile:@"亲，删除评论成功～！" withFangXiang:0 ];
+               [showErrorView shareWithTtile:@"亲，删除评论成功～！" withFangXiang:0 ];
             
            
         }
         else
         {
-//            [showErrorView shareWithTtile:@"亲，删除评论失败了哦～！" withFangXiang:1 ];
+           [showErrorView shareWithTtile:@"亲，删除评论失败了哦～！" withFangXiang:1 ];
             
             
         }
@@ -295,7 +295,7 @@
     };
     lydown.requestFailed=^(AFHTTPRequestOperation* op)
     {
-//        [showErrorView shareWithTtile:@"亲，删除评论失败了哦～！" withFangXiang:1 ];
+        [showErrorView shareWithTtile:@"亲，删除评论失败了哦～！" withFangXiang:1 ];
         
     };
     

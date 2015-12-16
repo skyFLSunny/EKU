@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EKU/Video/Controllers/videoInfoViewController.m"
-            timestampString = "471919670.234953"
+            timestampString = "471942258.419866"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
             landmarkName = "-scrollCan:"
             landmarkType = "5">
          </BreakpointContent>
@@ -266,6 +266,22 @@
             startingLineNumber = "634"
             endingLineNumber = "634"
             landmarkName = "-setMycontentArr:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EKU/Help/OtherHelp/kxmovie/KxMovieViewController.m"
+            timestampString = "471945544.084087"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "575"
+            endingLineNumber = "575"
+            landmarkName = "-doneDidTouch:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

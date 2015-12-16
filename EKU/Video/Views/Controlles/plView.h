@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "PLLIst.h"
-@interface plView : UIView
+@interface plView : UIView<UITextFieldDelegate,UIScrollViewDelegate>
 @property (nonatomic, weak) PLLIst *plView;
 @end

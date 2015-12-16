@@ -22,7 +22,7 @@
     return self;
 }
 -(void)configureUI{
-    leftButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
     rightTopButtonL =[UIButton buttonWithType:UIButtonTypeSystem];
     rightTopButtonR =[UIButton buttonWithType:UIButtonTypeSystem];
     rightBottomButtonL =[UIButton buttonWithType:UIButtonTypeSystem];

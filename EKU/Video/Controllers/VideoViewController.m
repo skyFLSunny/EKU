@@ -26,10 +26,14 @@
     [self initTableView];
     [self setStyle];
 }
--(void)viewWillAppear:(BOOL)animated
+- (void)viewWillAppear:(BOOL)animated
 {
+    [super viewWillAppear:animated];
+    self.tabBarController.tabBar.hidden = NO;
     [table reloadData];
+    [self.navigationController.navigationBar setHidden:NO];
 }
+
 #pragma mark 初始化
 -(void)initArrays
 {
@@ -132,6 +136,15 @@
     self.view.backgroundColor =DAYBACKCOLOR ;
   
     sortView.backgroundColor = DAYBOTTOMColor;
+}
+/**
+ *  是否支持旋转
+ *
+ *  @return 是否支持旋转
+ */
+- (BOOL)shouldAutorotate
+{
+    return NO;
 }
 -(void)dealloc
 {

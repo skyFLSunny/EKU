@@ -26,6 +26,12 @@ NSMutableArray* dataArray;
      self.title = _toptitle;
     // Do any additional setup after loading the view.
 }
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.tabBarController.tabBar.hidden = NO;
+    [self.navigationController.navigationBar setHidden:NO];
+}
 #pragma mark 初始化
 -(void)initArrays
 {
@@ -97,7 +103,15 @@ NSMutableArray* dataArray;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+/**
+ *  是否支持旋转
+ *
+ *  @return 是否支持旋转
+ */
+- (BOOL)shouldAutorotate
+{
+    return NO;
+}
 -(void)dealloc
 {
     NSLog(@"shifangle ");
