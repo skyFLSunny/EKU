@@ -21,7 +21,6 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
 blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
-<<<<<<< HEAD
 #define WEAKSELF typeof(self) __weak weakSelf = self;
 //科目颜色
 #define SUBJECTCOLOR   @[UIColorFromRGB(0xe88785),UIColorFromRGB(0x65abcf),UIColorFromRGB(0xf6e17c),UIColorFromRGB(0x97dad5),UIColorFromRGB(0xa571f9),UIColorFromRGB(0xcfe15b),UIColorFromRGB(0xf57d37),UIColorFromRGB(0x99c2ff),UIColorFromRGB(0xe35b99)]
