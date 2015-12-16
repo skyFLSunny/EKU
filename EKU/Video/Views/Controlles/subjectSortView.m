@@ -17,7 +17,7 @@
     NSArray *subjectImage;  // 科目图片
 }
 
--(id) initWithFrame:(CGRect)frame
+- (id)initWithFrame:(CGRect)frame
 {
     if(self = [super initWithFrame:frame])
     {
@@ -31,7 +31,7 @@
 }
 
 // 初始化控件
--(void) initControlls
+- (void)initControlls
 {
     float jx = 30;
     float width = (SCREENWIDTH - jx*6)/5.0;
@@ -64,7 +64,7 @@
 }
 
 // 初始化变量
-- (void) initArrays
+- (void)initArrays
 {
     // 科目名称
    subjectArray = @[@"语文",@"数学",@"英语",@"物理",@"化学",@"生物",@"政治",@"历史",@"地理"];
@@ -77,18 +77,18 @@
 
 }
 
--(void) setStyle
+- (void)setStyle
 {
         self.backgroundColor = DAYBOTTOMColor;
     
 }
--(void)pressSubject:(id)sender
+- (void)pressSubject:(id)sender
 {
     UIButton* btn = (UIButton*)sender;
     int tag;
-  if(  [btn.superview isKindOfClass:[subjectView class]])
+  if([btn.superview isKindOfClass:[subjectView class]])
   {
-      tag = ((subjectView*)btn.superview).selectedTag;
+      tag =(int) ((subjectView*)btn.superview).selectedTag;
       
   }
     VideoListViewController* con = [[VideoListViewController alloc] init];
@@ -98,5 +98,9 @@
     con.toptitle = subjectArray[tag];
     [curcon pushViewController:con animated:YES];
     
+}
+- (void)dealloc
+{
+    NSLog(@"shifangle ");
 }
 @end

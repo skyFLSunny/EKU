@@ -10,7 +10,7 @@
 
 @implementation videoBtn
 
--(void)layoutSubviews
+- (void)layoutSubviews
 {
     self.imageView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height-25);
     self.titleLabel.frame = CGRectMake(0, self.frame.size.height-20, self.frame.size.width, 20);
@@ -19,5 +19,9 @@
 
     [self.layer setMasksToBounds:YES];
     
+}
+- (void)dealloc
+{
+    NSLog(@"shifangle ");
 }
 @end

@@ -8,7 +8,9 @@
 
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
-
+#import "lyDownLoad.h"
+#define  ContentFilePath  @"SubJectDownload.plist"
+#define CLIPSCANSHU [UIScreen mainScreen].scale
 #define UIColorFromRGB(rgbValue) [UIColor \
 colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
@@ -47,4 +49,8 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
 #define TOPHEIGHT    ([[UIApplication sharedApplication] statusBarFrame].size.height+ self.navigationController.navigationBar.frame.size.height)
 #define FOOTHIGHT     (self.tabBarController.tabBar.frame.size.height)
 #define NORMOLEFONT    [UIFont systemFontOfSize:15]
+
+#define SMALLFONT    [UIFont systemFontOfSize:13]
+#define BIGFONT    [UIFont systemFontOfSize:17]
+#define DOCUMENTYM @"http://support.gkbb.zxxk.com"
 #endif /* PrefixHeader_pch */

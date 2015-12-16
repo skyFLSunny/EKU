@@ -11,7 +11,7 @@
 @implementation PersonalViewController
 -(void) viewDidLoad
 {
-    self.title = @"个人中心";
+    self.title = @"我的";
     [super viewDidLoad];
     [self setStyle];
 }
