@@ -7,7 +7,14 @@
 //
 
 #import "MainViewController.h"
-
+#import "EKUMineTopSearchBar.h"
+#import "EKUMineTopVideosView.h"
+#import "EKUMineCompetitiveVideoView.h"
+@interface MainViewController()<EKUMineTopSearchBarDelegate>
+@property (nonatomic,strong) EKUMineTopSearchBar *topSearchBar;
+@property (nonatomic,strong) EKUMineTopVideosView *topVideoView;
+@property (nonatomic,strong) EKUMineCompetitiveVideoView *middleVideoView;
+@end
 @implementation MainViewController
 -(void) viewDidLoad
 {
@@ -19,6 +26,23 @@
 // 设置样式
 -(void) setStyle
 {
+    _topSearchBar = [[EKUMineTopSearchBar alloc]initWithFrame:CGRectMake(0, TOPHEIGHT, SCREENWIDTH, 45)];
+    _topSearchBar.delegate = self;
+    [self.view addSubview:_topSearchBar];
+    
+    _topVideoView = [[EKUMineTopVideosView alloc]initWithFrame:CGRectMake(0, TOPHEIGHT+45, SCREENWIDTH, SCREENHEIGHT*0.25)];
+    [self.view addSubview:_topVideoView];
+    
+    _middleVideoView = [[EKUMineCompetitiveVideoView alloc]initWithFrame:CGRectMake(0, TOPHEIGHT+45+SCREENHEIGHT*0.25, SCREENWIDTH,  SCREENHEIGHT*0.3)];
+    [self.view addSubview:_middleVideoView];
     self.view.backgroundColor = [UIColor  greenColor];
+}
+//
+-(void)ykButtonClickedWithSearchText:(NSString *)searchText{
+    [self.view endEditing:YES];
+}
+//
+-(void)searchButtonClickWithSearchText:(NSString *)searchText{
+    [self.view endEditing:YES];
 }
 @end

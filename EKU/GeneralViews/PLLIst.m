@@ -77,7 +77,7 @@ static int pageNum = 1;
     cell.model=model1;
     [cell.wzbtn.layer setCornerRadius:5];
     [cell.wzbtn.layer setMasksToBounds:YES];
-    cell.backgroundColor = DAYTOPBACKCOLOR;
+   
     [cell setStyle];
     cell.selected = NO;
    
@@ -140,7 +140,7 @@ static int pageNum = 1;
         {
             if (_dataArray.count==0) {
                 [self addNoInfoView];
-                bgimage.image = [UIImage imageNamed:@"评论"];
+                bgimage.image = [UIImage imageNamed:@"评论-1"];
                 [_tableView removeFromSuperview];
                 
                 
@@ -248,7 +248,7 @@ static int pageNum = 1;
     {
         if (_dataArray.count==0) {
             [self addNoInfoView];
-            bgimage.image = [UIImage imageNamed:@"评论"];
+            bgimage.image = [UIImage imageNamed:@"评论-1"];
             [_tableView removeFromSuperview];
             
             

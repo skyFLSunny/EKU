@@ -32,7 +32,7 @@
 // 初始化控件
 - (void)initControl
 {
-    subjectTitle = [[UILabel alloc] initWithFrame:CGRectMake(10,( self.frame.size.height-25)/2.0, 40, 25)];
+    subjectTitle = [[UILabel alloc] initWithFrame:CGRectMake(6,( self.frame.size.height-25)/2.0, 40, 25)];
     sortTitle = [[UILabel alloc] initWithFrame:CGRectMake(55, 3, 200, self.frame.size.height-6)];
     infoLabel = [[UILabel alloc] initWithFrame:CGRectMake(SCREENWIDTH-100, 3, 80, self.frame.size.height-6)];
     infoLabel.textAlignment = NSTextAlignmentRight;
