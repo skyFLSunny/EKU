@@ -7,11 +7,11 @@
 //
 
 #import "showEssayView.h"
-
+#import "TopView.h"
 @implementation showEssayView
 {
     UIScrollView* scroll;   // 滑动控件
-    UIView* topView;        // 顶部view
+    TopView * topView;        // 顶部view
     UILabel* titleLabel;    // 知识详情titile
     UIButton* cancelBtn;    // 取消按钮
     UIView* sepView;        // 分割线
@@ -34,23 +34,20 @@
 - (void)initControl
 {
     scroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 50, SCREENWIDTH, self.frame.size.height-50)];
-    topView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 50)];
-    titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(10,0 , SCREENWIDTH-100, 50)];
+  
+    topView = [[TopView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 45) withTitle:@"知识详情"];
     cancelBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    cancelBtn.frame  =CGRectMake(SCREENWIDTH-50, 0, 50, 50);
+    cancelBtn.frame  =CGRectMake(SCREENWIDTH-50, 0, 45, 45);
     [cancelBtn setImage:[UIImage imageNamed:@"btn_error2.png"] forState:UIControlStateNormal];
     [cancelBtn setImageEdgeInsets:UIEdgeInsetsMake(15, 15, 15, 15)];
     [cancelBtn addTarget:self  action:@selector(pressCancel:) forControlEvents:UIControlEventTouchUpInside];
-    sepView = [[UIView alloc] initWithFrame:CGRectMake(0, 49.5, SCREENWIDTH, 0.5)];
+    [topView addSubview:cancelBtn];
+    
     showView = [[TYHShowView alloc] init];
     showView.frame =CGRectMake(0, 0,SCREENWIDTH , self.frame.size.height-50);
     showView.delegete = self;
-    
+    self.hidden = YES;
     [scroll addSubview:showView];
-
-    [topView addSubview:titleLabel];
-    [topView addSubview:cancelBtn];
-    [topView addSubview:sepView];
     [self addSubview:topView];
     [self addSubview:scroll];
     scroll.contentSize = CGSizeMake(SCREENWIDTH, self.frame.size.height-50);
@@ -66,14 +63,18 @@
     sepView.backgroundColor = DAYBACKCOLOR;
     self.backgroundColor = DAYBOTTOMColor;
     scroll.backgroundColor = DAYBOTTOMColor;
-   
+  
 }
 
 // 取消按钮事件处理
 - (void)pressCancel:(id)sender
 {
+    
     [UIView animateWithDuration:0.3 animations:^{
          self.frame = CGRectMake(0, SCREENHEIGHT, SCREENWIDTH, self.frame.size.height);
+    } completion:^(BOOL finished) {
+        self.hidden=YES;
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"CANSCROLL" object:self userInfo:nil];
     }];
    
 }
@@ -87,6 +88,9 @@
     model.backgroudColor =DAYBOTTOMColor;
     model.mathFlag= 1;
     model.lineSpace = 15*0.5;
+    scroll.frame = CGRectMake(0, scroll.frame.origin.y, SCREENWIDTH, self.frame.size.height-50);
+    showView.frame = CGRectMake(0, 0,SCREENWIDTH , self.frame.size.height-50);
+    scroll.contentSize  = CGSizeMake(SCREENWIDTH, scroll.frame.size.height-50);
      [showView shengchengNeiRong:str withModel:model with:self];
     titleLabel.text = @"不等式";
    
