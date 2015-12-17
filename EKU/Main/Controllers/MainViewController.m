@@ -10,10 +10,12 @@
 #import "EKUMineTopSearchBar.h"
 #import "EKUMineTopVideosView.h"
 #import "EKUMineCompetitiveVideoView.h"
+#import "EKUBottomTestView.h"
 @interface MainViewController()<EKUMineTopSearchBarDelegate>
 @property (nonatomic,strong) EKUMineTopSearchBar *topSearchBar;
 @property (nonatomic,strong) EKUMineTopVideosView *topVideoView;
 @property (nonatomic,strong) EKUMineCompetitiveVideoView *middleVideoView;
+@property (nonatomic,strong) EKUBottomTestView *bottomTest;
 @end
 @implementation MainViewController
 -(void) viewDidLoad
@@ -22,7 +24,12 @@
     [super viewDidLoad];
     [self setStyle];
 }
-
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.tabBarController.tabBar.hidden = NO;
+    [self.navigationController.navigationBar setHidden:NO];
+}
 // 设置样式
 -(void) setStyle
 {
@@ -35,6 +42,9 @@
     
     _middleVideoView = [[EKUMineCompetitiveVideoView alloc]initWithFrame:CGRectMake(0, TOPHEIGHT+45+SCREENHEIGHT*0.25, SCREENWIDTH,  SCREENHEIGHT*0.3)];
     [self.view addSubview:_middleVideoView];
+    
+    _bottomTest = [[EKUBottomTestView alloc]initWithFrame:CGRectMake(0, _middleVideoView.frame.origin.y+SCREENHEIGHT*0.3, SCREENWIDTH, SCREENHEIGHT-(_middleVideoView.frame.origin.y+SCREENHEIGHT*0.3))];
+    [self.view addSubview:_bottomTest];
     self.view.backgroundColor = [UIColor  greenColor];
 }
 //

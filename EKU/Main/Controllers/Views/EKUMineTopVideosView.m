@@ -7,7 +7,7 @@
 //
 
 #import "EKUMineTopVideosView.h"
-
+#import "videoInfoViewController.h"
 @implementation EKUMineTopVideosView{
     UIButton *leftButton;
     UIButton *rightTopButtonL;
@@ -18,11 +18,26 @@
 -(instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
         [self configureUI];
+        [self addTarget];
     }
     return self;
 }
+-(void)addTarget{
+    [leftButton addTarget:self action:@selector(touchVideoButton) forControlEvents:UIControlEventTouchUpInside];
+    [rightTopButtonL addTarget:self action:@selector(touchVideoButton) forControlEvents:UIControlEventTouchUpInside];
+    [rightTopButtonR addTarget:self action:@selector(touchVideoButton) forControlEvents:UIControlEventTouchUpInside];
+    [rightBottomButtonL addTarget:self action:@selector(touchVideoButton) forControlEvents:UIControlEventTouchUpInside];
+    [rightBottomBurronR addTarget:self action:@selector(touchVideoButton) forControlEvents:UIControlEventTouchUpInside];
+}
+-(void)touchVideoButton{
+    videoInfoViewController* con = [[videoInfoViewController alloc] init];
+    UIWindow* wi = [[UIApplication sharedApplication] keyWindow];
+    UITabBarController* tab = (UITabBarController*)wi.rootViewController;
+    UINavigationController*curcon= tab.selectedViewController;
+    [curcon pushViewController:con animated:YES];
+}
 -(void)configureUI{
-    leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    leftButton = [UIButton buttonWithType:UIButtonTypeSystem];
     rightTopButtonL =[UIButton buttonWithType:UIButtonTypeSystem];
     rightTopButtonR =[UIButton buttonWithType:UIButtonTypeSystem];
     rightBottomButtonL =[UIButton buttonWithType:UIButtonTypeSystem];
