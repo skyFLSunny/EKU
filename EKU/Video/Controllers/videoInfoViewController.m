@@ -40,6 +40,8 @@
 {
     [super viewDidLoad];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(scrollCan:) name:@"CANSCROLL" object:nil];
+    
+    self.fd_interactivePopDisabled = YES;
     self.tabBarController.tabBar.hidden = YES;
     [self initScroll];
     [self initPlayView];
@@ -56,6 +58,8 @@
 {
     [super viewDidAppear:animated];
     [self.navigationController.navigationBar setHidden:YES];
+    [self.tabBarController setHidesBottomBarWhenPushed:YES];
+    [self.tabBarController.tabBar setHidden:YES];
 }
 #pragma mark 初始化
 // 初始化滑动view
@@ -197,7 +201,6 @@
         videoList.frame =  CGRectMake(0, (250), SCREENWIDTH, SCREENHEIGHT-250+10);
     }];
 }
-
 // 下载按钮事件处理
 - (void)showPlList
 {

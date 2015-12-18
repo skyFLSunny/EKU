@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "UINavigationController+FDFullscreenPopGesture.h"
+
+#import "EKUPracticeController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +17,7 @@
 {
     MainViewController *main;
     PersonalViewController *perSon;
-    TestViewController *test;
+    EKUPracticeController *test;
     VideoViewController *video;
     
     UITabBarController *tabBarCon;
@@ -59,7 +60,7 @@
     // 创建Controller
     main = [[MainViewController alloc] init];
     video = [[VideoViewController alloc] init];
-    test = [[TestViewController alloc] init];
+    test = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"EKUPracticeController"];
     perSon = [[PersonalViewController alloc] init];
     UINavigationController* mainNav = [[UINavigationController alloc] initWithRootViewController:main];
     UINavigationController* videoNav = [[UINavigationController alloc] initWithRootViewController:video];
@@ -68,13 +69,11 @@
     tabBarCon = [[UITabBarController alloc] init];
     tabBarCon.viewControllers = @[mainNav,videoNav,testNav,personalNav];
     
-   
-    
     self.window.rootViewController = tabBarCon;
     [self.window makeKeyAndVisible];
     
     [self setTabBarStyle:self.normalImageArray selectArray:self.selectedImageArray back:DAYFOOTBACKCLOR text:[UIColor blackColor] select:DAYTOPBACKCOLOR];
-
+    
     
 }
 

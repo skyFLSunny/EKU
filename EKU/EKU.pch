@@ -9,6 +9,7 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 #import "lyDownLoad.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
 #import "AppDelegate.h"
 #import "showErrorView.h"
 #import "masonry.h"

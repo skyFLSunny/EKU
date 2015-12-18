@@ -68,7 +68,10 @@
 		8A7074951C20155F0052ACA1 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7074851C20155F0052ACA1 /* UIView+WebCacheOperation.m */; };
 		8A7074981C2015DF0052ACA1 /* plzhanBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7074971C2015DF0052ACA1 /* plzhanBtn.m */; };
 		8A70749B1C201B980052ACA1 /* plView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A70749A1C201B980052ACA1 /* plView.m */; };
-		8A9164A91C1E53AE009F8E43 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9164A81C1E53AE009F8E43 /* TestViewController.m */; };
+		8A7F4E5C1C225D8D00D6EDBA /* EKUPracticeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7F4E571C225D8D00D6EDBA /* EKUPracticeController.m */; };
+		8A7F4E5D1C225D8D00D6EDBA /* EKUPracticesCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7F4E591C225D8D00D6EDBA /* EKUPracticesCollectionCell.m */; };
+		8A7F4E5E1C225D8D00D6EDBA /* EKUPrecticeSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7F4E5B1C225D8D00D6EDBA /* EKUPrecticeSectionView.m */; };
+		8A7F4E621C225FB800D6EDBA /* EKUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7F4E611C225FB800D6EDBA /* EKUViewController.m */; };
 		8A9164AC1C1E53C1009F8E43 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9164AB1C1E53C1009F8E43 /* VideoViewController.m */; };
 		8A9164B01C1E53F3009F8E43 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9164AF1C1E53F3009F8E43 /* PersonalViewController.m */; };
 		8AA74A621C211954009AC0EE /* showErrorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA74A611C211954009AC0EE /* showErrorView.m */; };
@@ -272,8 +275,14 @@
 		8A7074971C2015DF0052ACA1 /* plzhanBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = plzhanBtn.m; sourceTree = "<group>"; };
 		8A7074991C201B980052ACA1 /* plView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plView.h; sourceTree = "<group>"; };
 		8A70749A1C201B980052ACA1 /* plView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = plView.m; sourceTree = "<group>"; };
-		8A9164A71C1E53AE009F8E43 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		8A9164A81C1E53AE009F8E43 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		8A7F4E561C225D8D00D6EDBA /* EKUPracticeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKUPracticeController.h; sourceTree = "<group>"; };
+		8A7F4E571C225D8D00D6EDBA /* EKUPracticeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKUPracticeController.m; sourceTree = "<group>"; };
+		8A7F4E581C225D8D00D6EDBA /* EKUPracticesCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKUPracticesCollectionCell.h; sourceTree = "<group>"; };
+		8A7F4E591C225D8D00D6EDBA /* EKUPracticesCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKUPracticesCollectionCell.m; sourceTree = "<group>"; };
+		8A7F4E5A1C225D8D00D6EDBA /* EKUPrecticeSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKUPrecticeSectionView.h; sourceTree = "<group>"; };
+		8A7F4E5B1C225D8D00D6EDBA /* EKUPrecticeSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKUPrecticeSectionView.m; sourceTree = "<group>"; };
+		8A7F4E601C225FB800D6EDBA /* EKUViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKUViewController.h; sourceTree = "<group>"; };
+		8A7F4E611C225FB800D6EDBA /* EKUViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKUViewController.m; sourceTree = "<group>"; };
 		8A9164AA1C1E53C1009F8E43 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		8A9164AB1C1E53C1009F8E43 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		8A9164AE1C1E53F3009F8E43 /* PersonalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalViewController.h; sourceTree = "<group>"; };
@@ -570,8 +579,8 @@
 			children = (
 				8A6ECF7A1C20F00F00323565 /* GeneralViews */,
 				8A91649D1C1E5146009F8E43 /* Personal */,
-				8A91649C1C1E513E009F8E43 /* Test */,
 				8A91649B1C1E50ED009F8E43 /* Video */,
+				8A7F4E551C225D8D00D6EDBA /* practise */,
 				8A91649A1C1E50BF009F8E43 /* Main */,
 				188801781C154972001588C3 /* AppDelegate.h */,
 				188801791C154972001588C3 /* AppDelegate.m */,
@@ -756,6 +765,28 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		8A7F4E551C225D8D00D6EDBA /* practise */ = {
+			isa = PBXGroup;
+			children = (
+				8A7F4E561C225D8D00D6EDBA /* EKUPracticeController.h */,
+				8A7F4E571C225D8D00D6EDBA /* EKUPracticeController.m */,
+				8A7F4E581C225D8D00D6EDBA /* EKUPracticesCollectionCell.h */,
+				8A7F4E591C225D8D00D6EDBA /* EKUPracticesCollectionCell.m */,
+				8A7F4E5A1C225D8D00D6EDBA /* EKUPrecticeSectionView.h */,
+				8A7F4E5B1C225D8D00D6EDBA /* EKUPrecticeSectionView.m */,
+			);
+			path = practise;
+			sourceTree = "<group>";
+		};
+		8A7F4E5F1C225FB800D6EDBA /* baseKit */ = {
+			isa = PBXGroup;
+			children = (
+				8A7F4E601C225FB800D6EDBA /* EKUViewController.h */,
+				8A7F4E611C225FB800D6EDBA /* EKUViewController.m */,
+			);
+			path = baseKit;
+			sourceTree = "<group>";
+		};
 		8A91649A1C1E50BF009F8E43 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -774,14 +805,6 @@
 				8A9164A51C1E530B009F8E43 /* Controllers */,
 			);
 			path = Video;
-			sourceTree = "<group>";
-		};
-		8A91649C1C1E513E009F8E43 /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				8A9164A61C1E5349009F8E43 /* Controllers */,
-			);
-			path = Test;
 			sourceTree = "<group>";
 		};
 		8A91649D1C1E5146009F8E43 /* Personal */ = {
@@ -810,15 +833,6 @@
 				8AAC46851C1EC8DA00086D8C /* VideoListViewController.m */,
 				8A9164AA1C1E53C1009F8E43 /* VideoViewController.h */,
 				8A9164AB1C1E53C1009F8E43 /* VideoViewController.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		8A9164A61C1E5349009F8E43 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				8A9164A71C1E53AE009F8E43 /* TestViewController.h */,
-				8A9164A81C1E53AE009F8E43 /* TestViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1123,6 +1137,7 @@
 		8ABB72531C1FB10000EB43FC /* Help */ = {
 			isa = PBXGroup;
 			children = (
+				8A7F4E5F1C225FB800D6EDBA /* baseKit */,
 				8A21E5B31C1FB85300F14F97 /* OtherHelp */,
 				8A21E5961C1FB71500F14F97 /* MyHelp */,
 				8ABB72AD1C1FB41A00EB43FC /* Categary */,
@@ -1448,6 +1463,7 @@
 				8ABB72A81C1FB11500EB43FC /* contentModel.m in Sources */,
 				8ABB72951C1FB11500EB43FC /* TYLinkTextStorage.m in Sources */,
 				8A7074881C20155F0052ACA1 /* SDImageCache.m in Sources */,
+				8A7F4E5E1C225D8D00D6EDBA /* EKUPrecticeSectionView.m in Sources */,
 				8ABB72991C1FB11500EB43FC /* TYViewStorage.m in Sources */,
 				8A6ECF831C20F78500323565 /* TopView.m in Sources */,
 				8A6ECF801C20F06900323565 /* PLTableViewCell.m in Sources */,
@@ -1455,6 +1471,7 @@
 				8A21E5D81C1FB85300F14F97 /* WStringHelper.m in Sources */,
 				8ABB72501C1FA82400EB43FC /* showEssayView.m in Sources */,
 				8AAC46861C1EC8DA00086D8C /* videoInfoViewController.m in Sources */,
+				8A7F4E5D1C225D8D00D6EDBA /* EKUPracticesCollectionCell.m in Sources */,
 				8ABB72A41C1FB11500EB43FC /* TYHShowGoodPL.m in Sources */,
 				8ABB72A21C1FB11500EB43FC /* TYHGetSizeGonshi.m in Sources */,
 				8A21E59F1C1FB76400F14F97 /* DownLoadManger.m in Sources */,
@@ -1466,6 +1483,7 @@
 				8ABB729B1C1FB11500EB43FC /* GSImageModel.m in Sources */,
 				8A70743A1C1FE1980052ACA1 /* FunctionView.m in Sources */,
 				8A7074921C20155F0052ACA1 /* UIImage+WebP.m in Sources */,
+				8A7F4E621C225FB800D6EDBA /* EKUViewController.m in Sources */,
 				8ABB72921C1FB11500EB43FC /* TYAttributedLabel.m in Sources */,
 				8A21E62A1C1FBB8100F14F97 /* UIImage+Tint.m in Sources */,
 				8A21E5D31C1FB85300F14F97 /* FilePath.m in Sources */,
@@ -1480,6 +1498,7 @@
 				8A7074911C20155F0052ACA1 /* UIImage+MultiFormat.m in Sources */,
 				8ABB72971C1FB11500EB43FC /* TYTextContainer.m in Sources */,
 				8A21E5D21C1FB85300F14F97 /* DicDBHelper.m in Sources */,
+				8A7F4E5C1C225D8D00D6EDBA /* EKUPracticeController.m in Sources */,
 				8A70748A1C20155F0052ACA1 /* SDWebImageDecoder.m in Sources */,
 				8AA74AE71C213F5A009AC0EE /* KxMovieViewController.m in Sources */,
 				8AAC467C1C1EC8C800086D8C /* videoTableViewCell.m in Sources */,
@@ -1521,7 +1540,6 @@
 				8A70748C1C20155F0052ACA1 /* SDWebImageDownloaderOperation.m in Sources */,
 				8A21E5CF1C1FB85300F14F97 /* ONGDAOBase.m in Sources */,
 				8AA74AE61C213F5A009AC0EE /* KxMovieGLView.m in Sources */,
-				8A9164A91C1E53AE009F8E43 /* TestViewController.m in Sources */,
 				8AAC468A1C1EC8E400086D8C /* videoModel.m in Sources */,
 				8A7074951C20155F0052ACA1 /* UIView+WebCacheOperation.m in Sources */,
 				8A6ECF7F1C20F06900323565 /* PLLIst.m in Sources */,

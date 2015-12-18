@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EKU/Video/Controllers/videoInfoViewController.m"
-            timestampString = "471942258.419866"
+            timestampString = "472013603.81361"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "175"
-            endingLineNumber = "175"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
             landmarkName = "-showEssayDelegate"
             landmarkType = "5">
          </BreakpointContent>

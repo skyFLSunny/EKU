@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "MainViewController.h"
 #import "PersonalViewController.h"
-#import "TestViewController.h"
+
 #import "VideoViewController.h"
+@class EKUPracticeController;
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
